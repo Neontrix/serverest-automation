@@ -1,0 +1,7 @@
+*.log
+*.result
+*.xml
+*.html
+*.tmp
+# Ignorar venv (virtual environment)
+venv/

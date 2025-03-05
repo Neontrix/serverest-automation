@@ -1,0 +1,15 @@
+# URL base para a API
+base_url: https://serverest.dev
+
+# URL para o Frontend
+frontend_url: https://front.serverest.dev/
+
+# Configurações de Navegador para testes de Frontend
+browser: Chrome
+headless: true  # Para rodar sem abrir o navegador (pode ser false se quiser ver a execução)
+
+# Configurações de tempo de espera para testes
+timeout: 10  # Tempo de espera padrão em segundos
+
+# Configurações de API
+api_timeout: 30  # Timeout para requisições da API

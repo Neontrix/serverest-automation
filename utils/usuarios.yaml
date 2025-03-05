@@ -1,0 +1,5 @@
+usuario:
+  nome: "Teste QA"
+  email: "testeqa@email.com"
+  password: "testqa123"
+  administrador: "true"
