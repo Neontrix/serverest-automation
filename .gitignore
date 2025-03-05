@@ -5,3 +5,4 @@
 *.tmp
 # Ignorar venv (virtual environment)
 venv/
+__pycache__/
