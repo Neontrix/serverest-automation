@@ -8,6 +8,15 @@ Comparar strings
     Should Be Equal As Strings
     ...    ${FIELD}
     ...    ${STRING}
-    ...    error=O elemento ${FIELD} da string ${STRING} não foi encontrado durante a execução do caso de teste: ${TEST_NAME}
-    ...    
+    ...    error=Esperado: '${STRING}', mas obtido: '${FIELD}'. Teste: ${TEST_NAME}
+  
+Validar campo
+    [Arguments]    ${STRING}
+    Should Not Be Empty    ${STRING}    
+    ...    msg=Valor da string vazia: '${STRING}'. Teste: ${TEST_NAME}
+    
+Aguardar elemento visivel
+    [Arguments]    ${ELEMENT} 
+    Wait Until Element Is Visible    ${ELEMENT}    timeout=10s    
+    ...    error=Elemento ${ELEMENT} não foi encontrado durante a execução do caso de teste: ${TEST_NAME}
     

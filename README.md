@@ -35,6 +35,27 @@ pip install robotframework-seleniumlibrary
 pip install Faker
 ```
 
+### 5. **Ambiente Virtual**
+- No diretório do seu projeto, execute:
+```bash
+python -m venv venv
+```
+
+### 6. **Rodar Testes**
+- Antes de tudo, verifique no terminal se voce está nesse caminho:
+> \serverest-automation\serverest-automation> 
+OBS: É extremamente importante pois para localizar as variáveis, configurações e arquivos que rode a partir da pasta raíz.
+
+- Para rodar testes, execute:
+```bash
+robot testCases/api/usuarios_gherkin.robot
+```
+
+- Ou se quiser rodar um cenário com tag específica:
+```bash
+robot --include criar_usuario testCases/api/usuarios_gherkin.robot   
+```
+
 ### ---- Pré-Requisitos Testes API ----
 ### 1. **Instalação RequestsLibrary**
 - A RequestsLibrary é necessária para realizar chamadas de API durante os testes automatizados. Instale com o comando:
@@ -54,8 +75,3 @@ pip install robotframework-screencaplibrary
 ```bash
 pip install robotframework-tidy
 ```
-
-Navegadores:
-- Download do geckodriver 0.31.0 (https://github.com/mozilla/geckodriver/releases)
-- Download do chrome driver (https://chromedriver.chromium.org/downloads)
-- Salvar o arquivo executável chrome driver e geckodriver dentro da pasta scripts onde foi instalado o Python na sua máquina.

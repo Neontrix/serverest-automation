@@ -2,7 +2,7 @@
 Library    RequestsLibrary
 Library    FakerLibrary    locale=pt_BR
 Library    ../../utils/YamlLibrary.py    # Biblioteca personalizada para carregar YAML
-Library    Collections    # Biblioteca para manipulação de dicionários
+Library    Collections    
 
 Resource    ../../components/validator.robot
 

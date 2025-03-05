@@ -3,6 +3,8 @@
 *.xml
 *.html
 *.tmp
-# Ignorar venv (virtual environment)
+*.PNG
 venv/
 __pycache__/
+/screenshots/
+/results/

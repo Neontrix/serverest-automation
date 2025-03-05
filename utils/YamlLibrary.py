@@ -1,7 +1,6 @@
 from robot.api.deco import keyword
 import yaml
 
-# Definição da keyword com a convenção correta de maiúsculas
 @keyword
 def READ_YAML(file):
     """Lê o arquivo YAML e retorna os dados."""

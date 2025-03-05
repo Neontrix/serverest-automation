@@ -1,0 +1,32 @@
+name: Run ServeRest tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set environment variables
+      run: |
+        echo "ENV_BACKEND_URL=https://serverest.dev" >> $GITHUB_ENV
+        echo "ENV_FRONTEND_URL=https://front.serverest.dev/" >> $GITHUB_ENV
+        echo "ENV_BROWSER=Chrome" >> $GITHUB_ENV
+        echo "ENV_HEADLESS=True" >> $GITHUB_ENV
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Robot Framework tests
+      run: |
+        robot testCases/front/usuarios_gherkin.robot

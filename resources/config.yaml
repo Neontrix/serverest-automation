@@ -6,7 +6,7 @@ frontend_url: https://front.serverest.dev/
 
 # Configurações de Navegador para testes de Frontend
 browser: Chrome
-headless: true  # Para rodar sem abrir o navegador (pode ser false se quiser ver a execução)
+headless: false  # true para rodar em modo headless
 
 # Configurações de tempo de espera para testes
 timeout: 10  # Tempo de espera padrão em segundos
