@@ -29,4 +29,4 @@ jobs:
 
     - name: Run Robot Framework tests
       run: |
-        robot testCases/front/usuarios_gherkin.robot
+        robot testCases/api/usuarios_gherkin.robot
